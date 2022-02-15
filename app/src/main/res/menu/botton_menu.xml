@@ -15,9 +15,9 @@
         android:orderInCategory="2"/>
 
     <item
-        android:id="@+id/uzelki"
+        android:id="@+id/bundles"
         android:icon="@drawable/ic_baseline_content_copy_24"
-        android:title="Uzelki"
+        android:title="Bundles"
         android:orderInCategory="3"/>
 
     <item
