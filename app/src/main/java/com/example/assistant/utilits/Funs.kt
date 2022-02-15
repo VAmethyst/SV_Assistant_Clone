@@ -17,12 +17,6 @@ fun AppCompatActivity.replaceActivity(activity: AppCompatActivity) {
     this.finish()
 }
 
-fun AppCompatActivity.replaceFragmentActivity(fragment: Fragment) {
-    supportFragmentManager.beginTransaction()
-        .addToBackStack(null)
-        .replace(R.id.place_holder, fragment).commit()
-}
-
 fun replaceFragment(fragment: Fragment, addStack: Boolean = true) {
     /* Функция расширения для AppCompatActivity, позволяет устанавливать фрагменты */
     if (addStack) {
