@@ -1,4 +1,4 @@
-package com.example.assistant.ui
+package com.example.assistant.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,14 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.assistant.R
 
-class MuseumFragment : Fragment() {
+class BundlesFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_museum, container, false)
+        return inflater.inflate(R.layout.fragment_bundles, container, false)
     }
 
 }

@@ -3,9 +3,10 @@ package com.example.assistant
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.assistant.databinding.ActivityMainBinding
-import com.example.assistant.ui.BundlesFragment
-import com.example.assistant.ui.MuseumFragment
-import com.example.assistant.ui.SearchFragment
+import com.example.assistant.ui.fragments.BundlesFragment
+import com.example.assistant.ui.MainFragment
+import com.example.assistant.ui.fragments.MuseumFragment
+import com.example.assistant.ui.fragments.SearchFragment
 import com.example.assistant.utilits.APP_ACTIVITY
 import com.example.assistant.utilits.replaceFragment
 
