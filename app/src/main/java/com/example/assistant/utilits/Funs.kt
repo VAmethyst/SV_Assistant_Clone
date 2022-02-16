@@ -14,7 +14,7 @@ fun showToast(message: String) {
 fun AppCompatActivity.replaceActivity(activity: AppCompatActivity) {
     val intent = Intent(this, activity::class.java)
     startActivity(intent)
-    this.finish()
+//    this.finish()
 }
 
 fun replaceFragment(fragment: Fragment, addStack: Boolean = true) {
