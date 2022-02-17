@@ -6,4 +6,7 @@ fun Fragment.navigator(): Navigator {
     return requireActivity() as Navigator
 }
 
-interface Navigator {}
+interface Navigator {
+
+    fun goToBuildingsList()
+}

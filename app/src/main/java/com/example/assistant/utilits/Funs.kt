@@ -12,18 +12,16 @@ fun showToast(message: String) {
 fun replaceFragment(fragment: Fragment, addStack: Boolean = true) {
     /* Функция расширения для AppCompatActivity, позволяет устанавливать фрагменты */
     if (addStack) {
-        APP_ACTIVITY.supportFragmentManager.beginTransaction()
+        APP_ACTIVITY.supportFragmentManager
+            .beginTransaction()
             .addToBackStack(null)
-            .replace(
-                R.id.place_holder,
-                fragment
-            ).commit()
+            .replace(R.id.fragment_container, fragment)
+            .commit()
     } else {
-        APP_ACTIVITY.supportFragmentManager.beginTransaction()
-            .replace(
-                R.id.place_holder,
-                fragment
-            ).commit()
+        APP_ACTIVITY.supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.fragment_container,fragment)
+            .commit()
     }
 
 }
