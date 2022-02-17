@@ -29,12 +29,11 @@ class SearchFragment : Fragment(), View.OnClickListener {
     }
 
     private fun onVillagersButtonPressed() {
-        showToast("Нажатие жителей сработало")
+        navigator().goToVillagesList()
     }
 
     private fun onBuildingsButtonPressed() {
-        showToast("Нажатие построек сработало")
-//        navigator().goToBuildingsList()
+        navigator().goToBuildingsList()
     }
 
 }

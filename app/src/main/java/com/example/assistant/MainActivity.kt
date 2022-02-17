@@ -11,6 +11,7 @@ import com.example.assistant.ui.fragments.SearchFragment
 import com.example.assistant.ui.fragments.details.BuildingsFragment
 import com.example.assistant.utilits.APP_ACTIVITY
 import com.example.assistant.utilits.replaceFragment
+import com.example.assistant.utilits.showToast
 
 class MainActivity : AppCompatActivity(), Navigator {
 
@@ -43,6 +44,10 @@ class MainActivity : AppCompatActivity(), Navigator {
 
     override fun goToBuildingsList() {
         replaceFragment(BuildingsFragment())
+    }
+
+    override fun goToVillagesList() {
+        showToast("В работе")
     }
 
 }

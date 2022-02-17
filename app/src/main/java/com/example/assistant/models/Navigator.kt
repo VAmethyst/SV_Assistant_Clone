@@ -7,6 +7,6 @@ fun Fragment.navigator(): Navigator {
 }
 
 interface Navigator {
-
     fun goToBuildingsList()
+    fun goToVillagesList()
 }

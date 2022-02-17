@@ -1,16 +1,19 @@
 package com.example.assistant.utilits
 
+import android.util.Log
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.assistant.R
 
 fun showToast(message: String) {
-    /* Функция показывает сообщение */
     Toast.makeText(APP_ACTIVITY, message, Toast.LENGTH_SHORT).show()
 }
 
+fun showLog(message: String) {
+    Log.d("MyLog",message)
+}
+
 fun replaceFragment(fragment: Fragment, addStack: Boolean = true) {
-    /* Функция расширения для AppCompatActivity, позволяет устанавливать фрагменты */
     if (addStack) {
         APP_ACTIVITY.supportFragmentManager
             .beginTransaction()
