@@ -5,11 +5,10 @@ import android.os.Bundle
 import com.example.assistant.databinding.ActivityMainBinding
 import com.example.assistant.models.Navigator
 import com.example.assistant.ui.fragments.BundlesFragment
-import com.example.assistant.ui.MainFragment
+import com.example.assistant.ui.fragments.MainFragment
 import com.example.assistant.ui.fragments.MuseumFragment
 import com.example.assistant.ui.fragments.SearchFragment
 import com.example.assistant.utilits.APP_ACTIVITY
-import com.example.assistant.utilits.replaceActivity
 import com.example.assistant.utilits.replaceFragment
 
 class MainActivity : AppCompatActivity(), Navigator {
@@ -39,10 +38,6 @@ class MainActivity : AppCompatActivity(), Navigator {
             }
             true
         }
-    }
-
-    override fun goToNextActivity() {
-        replaceActivity(DetailsActivity())
     }
 
 }

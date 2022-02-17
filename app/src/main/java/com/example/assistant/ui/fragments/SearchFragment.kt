@@ -14,12 +14,8 @@ class SearchFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding = FragmentSearchBinding.inflate(inflater, container, false)
-        binding.buttonBuildings.setOnClickListener { onBuildingsPressed() }
+        binding.buttonBuildings.setOnClickListener {   }
         return binding.root
-    }
-
-    private fun onBuildingsPressed() {
-        navigator().goToNextActivity()
     }
 
 }

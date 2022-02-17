@@ -6,18 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.assistant.R
+import com.example.assistant.databinding.FragmentObjectDetailsBinding
+import com.example.assistant.databinding.FragmentSearchBinding
 import com.example.assistant.models.CustomAction
 import com.example.assistant.models.HasCustomAction
 import com.example.assistant.models.HasCustomTitle
 
 class ObjectDetailsFragment : Fragment(), HasCustomAction, HasCustomTitle {
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_object_details, container, false)
+    private lateinit var binding: FragmentObjectDetailsBinding
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+        binding = FragmentObjectDetailsBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun getCustomAction(): CustomAction {
